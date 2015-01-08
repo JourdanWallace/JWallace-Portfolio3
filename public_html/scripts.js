@@ -5,9 +5,28 @@
  */
 
  $("document").ready(function() {
-     $(".p:first").css({"background-color": "purple", "color": "white"}); 
+     $(".p:first").css({"background-color": "purple", "color": "red"}); 
      
-     $(".p:last").css({"background-color": "yellow", "color": "white"});
+     $(".p:last").css({"background-color": "orange", "color": "black"});
      
-     $(".p span:first-child").css("background-color", "orange");
+      $('#oneButton').bind('click', alertButtonClick);  
+      
+      $('#twoButton').bind('hover', alertButtonHover);  
 });
+
+ 
+
+function alertButtonClick() {
+    alert("There was a button clicked");
+}
+
+function alertButtonHover() {
+    alert("There was a button hovered over");
+}
+
+
+   //function repeats() {
+     //  document.getElementById('buttons').innerHTML += '<input id ="addsubmit" onclick="repeats()";  type="submit" value= "Submit" style = "margin-top: 25px;">';
+   // };
+
+    
