@@ -13,7 +13,8 @@ $("document").ready(function() {
 
     $('#twoButton').bind('hover', alertButtonHover);
     
-    $('#replaceWHtml').bind('click', replaceWHtml);         
+    $('#replaceWHtml').bind('click', replaceWHtml); 
+    
     $('#replaceWText').bind('click', replaceWText);
 
   
@@ -37,15 +38,4 @@ function mouseOutMe() {
     $("h1").html("MouseOff");
     $("p").html("You stopped touching the box");
 }
-
-//function replaceWHtml () {   $('#button').html()}
-
-//function replaceWHtml () {
-    //$('#button').html()}
-
-
-//function repeats() {
-//  document.getElementById('buttons').innerHTML += '<input id ="addsubmit" onclick="repeats()";  type="submit" value= "Submit" style = "margin-top: 25px;">';
-// };
-
 
