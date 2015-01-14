@@ -15,17 +15,26 @@ $("document").ready(function() {
     
     $('#replaceWHtml').bind('click', replaceWHtml); 
     
+    $('#randPara').bind('click', addAPara);
+    
+    $('#removePara').bind('click', removeAPara);
+    
     $('#replaceWText').bind('click', replaceWText);
 
-  
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    
+    $('#show').css('visibility', 'hidden');
+    
+    $('#hide').bind('click', hideThePage);
+    
+    $('#show').bind('click', showThePage);
 
 });
 
 
 
 function alertButtonClick() {
-    alert("There was a button clicked");
+   alert("There was a button clicked");
 }
 
 function mouseOverMe() {
@@ -39,3 +48,29 @@ function mouseOutMe() {
     $("p").html("You stopped touching the box");
 }
 
+function hideThePage() {
+    $('#show').css('visibility', 'visible');
+    $('div').hide('slide', {}, 2500);
+    $('#show').show('fold', {}, 2500);
+}
+
+function showThePage() {
+    $('div').show('fold', {}, 2500);
+    $('#show').hide('puff', {}, 2500);
+}
+
+function removeAPara() {
+    $('#randPara p:last').remove();
+}
+
+function addAPara () {
+    $('#randPara').append('<p>ADDED</p>');
+}
+
+function ReplaceWText () {
+    $('#randPara').html('<h1>I am the awesomest of awesome</h1>');
+}
+
+function removeAPara() {
+    $('#randPara').html('<h1></h1>');
+}
