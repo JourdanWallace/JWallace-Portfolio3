@@ -5,23 +5,27 @@
  */
 
 $("document").ready(function() {
-    $(".p:first").css({"background-color": "purple", "color": "red"});
-
-    $(".p:last").css({"background-color": "orange", "color": "black"});
-
-    $('#oneButton').bind('click', alertButtonClick);
-
-    $('#twoButton').bind('hover', alertButtonHover);
+   $('h5').css('background-color', 'red');
     
-    $('#replaceWHtml').bind('click', replaceWHtml); 
+    $('#superHumans').accordion({header: "h5"});
     
-    $('#randPara').bind('click', addAPara);
-    
-    $('#removePara').bind('click', removeAPara);
-    
-    $('#replaceWText').bind('click', replaceWText);
+   // $(".p:first").css({"background-color": "purple", "color": "red"});
 
-    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+   // $(".p:last").css({"background-color": "orange", "color": "black"});
+
+   // $('#oneButton').bind('click', alertButtonClick);
+
+   // $('#twoButton').bind('hover', alertButtonHover);
+    
+   // $('#replaceWHtml').bind('click', replaceWHtml); 
+    
+   // $('#randPara').bind('click', addAPara);
+    
+   // $('#removePara').bind('click', removeAPara);
+    
+   // $('#replaceWText').bind('click', replaceWText);
+
+   // $("h3").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     
     $('#show').css('visibility', 'hidden');
     
@@ -74,3 +78,4 @@ function ReplaceWText () {
 function removeAPara() {
     $('#randPara').html('<h1></h1>');
 }
+
