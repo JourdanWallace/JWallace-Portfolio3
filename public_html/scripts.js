@@ -9,23 +9,23 @@ $("document").ready(function() {
     
     $('#superHumans').accordion({header: "h5"});
     
-   // $(".p:first").css({"background-color": "purple", "color": "red"});
+    $(".p:first").css({"background-color": "purple", "color": "red"});
 
-   // $(".p:last").css({"background-color": "orange", "color": "black"});
+    $(".p:last").css({"background-color": "orange", "color": "black"});
 
-   // $('#oneButton').bind('click', alertButtonClick);
+    $('#oneButton').bind('click', alertButtonClick);
 
-   // $('#twoButton').bind('hover', alertButtonHover);
+    $('#twoButton').bind('hover', alertButtonHover);
     
-   // $('#replaceWHtml').bind('click', replaceWHtml); 
+    $('#replaceWHtml').bind('click', replaceWHtml); 
     
-   // $('#randPara').bind('click', addAPara);
+    $('#randPara').bind('click', addAPara);
     
-   // $('#removePara').bind('click', removeAPara);
+    $('#removePara').bind('click', removeAPara);
     
-   // $('#replaceWText').bind('click', replaceWText);
+    $('#replaceWText').bind('click', replaceWText);
 
-   // $("h3").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    $("h3").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     
     $('#show').css('visibility', 'hidden');
     
