@@ -5,46 +5,46 @@
  */
 
 $("document").ready(function() {
-   $('h5').css('background-color', 'red');
-    
+    $('h5').css('background-color', 'red');
+
     $('#superHumans').accordion({header: "h5"});
-    
+
     $(".p:first").css({"background-color": "purple", "color": "red"});
 
     $(".p:last").css({"background-color": "orange", "color": "black"});
 
     $('#oneButton').bind('click', alertButtonClick);
 
-    $('#twoButton').bind('hover', alertButtonHover);
-    
-    $('#replaceWHtml').bind('click', replaceWHtml); 
-    
+    $('#twoButton').bind('mouseover', alertButtonHover);
+
+    $('#fourButton').bind('click', replaceWHtml);
+
     $('#randPara').bind('click', addAPara);
-    
+
     $('#removePara').bind('click', removeAPara);
-    
-    $('#replaceWText').bind('click', replaceWText);
+
+    $('#threeButton').bind('click', replaceWText);
 
     $("h3").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
-    
+
     $('#show').css('visibility', 'hidden');
-    
+
     $('#hide').bind('click', hideThePage);
-    
+
     $('#show').bind('click', showThePage);
+
+    $('#fiveButton').bind('click', FadeTheLogo);
 
 });
 
 
 
 function alertButtonClick() {
-   alert("There was a button clicked");
+    alert("There was a button clicked");
 }
 
-function mouseOverMe() {
-    $("h1").html("MouseOn");
-    $("p").html("You started touching the box");
-
+function alertButtonHover() {
+    alert("There was a button hovered over");
 }
 
 function mouseOutMe() {
@@ -67,15 +67,23 @@ function removeAPara() {
     $('#randPara p:last').remove();
 }
 
-function addAPara () {
+function addAPara() {
     $('#randPara').append('<p>ADDED</p>');
 }
 
-function ReplaceWText () {
-    $('#randPara').html('<h1>I am the awesomest of awesome</h1>');
+function replaceWHtml() {
+    $('#replaceWHTML').html('<h4>I\'m the awesomest of awesome h4</h4>');
+}
+
+function replaceWText() {
+    $('#replaceWText').text('<h4>I\'m the awesomest of awesome h4</h4>');
 }
 
 function removeAPara() {
     $('#randPara').html('<h1></h1>');
+}
+
+function FadeTheLogo() {
+    $('#logo').fadeOut(2500);
 }
 
