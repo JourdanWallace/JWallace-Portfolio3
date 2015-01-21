@@ -6,44 +6,51 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Portfolio 3</title>
+        <title>JQuery Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!--The code necessary to make the accordion work-->
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     </head>
     <body>
+        <!--The image I am using-->
         <img id="logo" height="200" width="200" src="http://fc01.deviantart.net/fs70/f/2013/213/f/3/scandroid___skull_robot_logo_by_silentdan297-d6g7hb9.png" alt="">
         <div class="p">
+            <!--The text I am using in the first paragraph-->
             <h1>Third milestone hover</h1>
             <p>Hi my name is Jourdan and this is my new portfolio project! </p>
             <p>I am still a freshman at PHS and I am still in the App Academy.</p>
         </div>
         <div class="p">
+            <!--The text I am using in the middle paragraph-->
             <p>I am still a student athlete playing tennis and basketball.</p>
             <p>We are now moving into JQuery and it is really getting on my nerves.</p>     
         </div>
-        
-          <div class="p">
+
+        <div class="p">
+            <!--The text I am using for the last paragraph-->
             <p>This project is a little bit more confusing then the others but it's fun.</p>
-            <p>WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW WOW</p>     
+            <p>Almost done with the project, just trying to make it look cool!</p>     
         </div>
-        
+
         <div><h2>Playing with Text</h2></div>
         <div>
+            <!--The tag I have decided to use-->
             <h3 id="h3Tag">H3 Tag</h3>
         </div>
-        
+
         <div>
+            <!--The links to the other pages I have made-->
             <a class="list-group-item" href="index.html">About Me</a>
             <a class="list-group-item" href="projects.html">Projects</a>
             <a class="list-group-item" href="technologies.html">Technologies</a>
         </div>
-    
-        
+        <!--The button that when clicked on will show the page-->
         <button id="show">Show the Page</button>
         <div class="p">
+            <!--The text that will replace, add , and rewrite the three lines of code-->
             <h4>5th Video Something</h4>
             <p id="replaceWText">Hi</p>
             <p id="replaceWHTML">Bye</p>
@@ -51,7 +58,7 @@ and open the template in the editor.
             <p>2</p>
             <p id="hide">Sibling</p>
         </div>
-        
+        <!--The text that will be inside of the accordion -->
         <div id="superHumans">
             <h5>First</h5>
             <p>1st</p>
@@ -60,14 +67,15 @@ and open the template in the editor.
             <h5>Third</h5>
             <p>3rd</p>
         </div>
-        
-        
-        
+
+
+        <!--All of the buttons I am using-->
         <button id="oneButton" type="button">Click Me!</button>
         <button id="twoButton" type="button">Hover Over Me!</button>
         <button id="threeButton" type="button">Replace w/ HTML</button>
         <button id="fourButton" type="button">Replace w/ Text</button>   
-        <button id="fiveButton" type="button">Fade the Logo</button> 
+        <button id="hideLogo" type="button">Hide Logo</button> 
+        <button id="showLogo" type="button">Show Logo</button> 
         <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
